@@ -1,0 +1,32 @@
+# Node or CLI tooling (if you ever use npm/yarn or schema testing tools)
+node_modules/
+.env
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Log files and system junk
+*.log
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.swp
+*~
+
+# Compressed or generated exports (optional)
+*.zip
+*.tar.gz
+*.7z
+
+# IDE/project metadata
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Optional: ignore screenshots or drafts
+screenshots/
+drafts/
+

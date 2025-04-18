@@ -1,0 +1,99 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GeoShape",
+      "@id": "https://www.djmaddox.co.uk/gallery/[slug]/#SouthWalesRegion",
+      "box": "51.229 -5.8077 52.2714 -2.6499"
+    },
+    {
+      "@type": "Event",
+      "@id": "https://www.djmaddox.co.uk/gallery/[slug]/#EventID",
+      "name": "[Event Name]",
+      "startDate": "[YYYY-MM-DD]",
+      "endDate": "[YYYY-MM-DD]",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "[Venue Name]",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "[Street or area]",
+          "addressLocality": "[Town or city]",
+          "addressRegion": "[County or region]",
+          "postalCode": "[Postcode]",
+          "addressCountry": "UK"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "[Service Name]",
+        "url": "https://www.djmaddox.co.uk/about/[service-page-slug]/",
+        "description": "[One-line offer description]",
+        "availability": "https://schema.org/InStock",
+        "areaServed": {
+          "@id": "https://www.djmaddox.co.uk/gallery/[slug]/#SouthWalesRegion"
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://www.djmaddox.co.uk/about/[service-page-slug]/#ServiceID",
+          "url": "https://www.djmaddox.co.uk/about/[service-page-slug]/"
+        },
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "name": "Book [Service Name]",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.djmaddox.co.uk/contact/",
+            "inLanguage": "en-GB",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      },
+      "performer": {
+        "@type": "LocalBusiness",
+        "@id": "https://www.djmaddox.co.uk/#DJMaddox",
+        "name": "DJ Maddox",
+        "url": "https://www.djmaddox.co.uk/"
+      },
+      "description": "[Short summary of what DJ Maddox provided for the event]",
+      "image": [
+        "https://www.djmaddox.co.uk/wp-content/uploads/[filename-1].webp",
+        "https://www.djmaddox.co.uk/wp-content/uploads/[filename-2].webp"
+      ],
+      "subjectOf": {
+        "@type": "ImageGallery",
+        "@id": "https://www.djmaddox.co.uk/gallery/[slug]/#GalleryID"
+      }
+    },
+    {
+      "@type": "ImageGallery",
+      "@id": "https://www.djmaddox.co.uk/gallery/[slug]/#GalleryID",
+      "name": "[Gallery Title]",
+      "url": "https://www.djmaddox.co.uk/gallery/[slug]/",
+      "description": "[Summary of gallery content]",
+      "image": [
+        "https://www.djmaddox.co.uk/wp-content/uploads/[filename-1].webp",
+        "https://www.djmaddox.co.uk/wp-content/uploads/[filename-2].webp"
+      ],
+      "associatedMedia": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://www.djmaddox.co.uk/wp-content/uploads/[filename-1].webp",
+          "caption": "[MUST match exact alt text]"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://www.djmaddox.co.uk/wp-content/uploads/[filename-2].webp",
+          "caption": "[MUST match exact alt text]"
+        }
+      ]
+    }
+  ]
+}
+</script>
